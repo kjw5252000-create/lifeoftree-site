@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>주식회사 라이프오브트리 | 소규모주택정비사업 전문</title>
+<meta name="description" content="주식회사 라이프오브트리는 가로주택정비사업 등 소규모주택정비사업의 조합 설립부터 입주까지 주민과 함께하는 정비사업 전문 법인입니다.">
+<meta property="og:title" content="주식회사 라이프오브트리">
+<meta property="og:description" content="오래된 동네에 새 나이테를. 소규모주택정비사업 전문 법인.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#16352a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2316352a'/%3E%3Cg fill='none' stroke='%23d9c79e' stroke-width='3'%3E%3Ccircle cx='32' cy='32' r='8'/%3E%3Ccircle cx='32' cy='32' r='15'/%3E%3Ccircle cx='32' cy='32' r='22'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --forest-900:#0f261e; --forest-800:#16352a; --forest-700:#1f4a3a; --forest-600:#2b6150;
+    --moss:#7f9f84; --sand-100:#f6f2ea; --sand-200:#ece4d4; --sand-300:#d9c79e; --bark:#8a6a45;
+    --ink:#17201c; --ink-2:#3d4a44; --muted:#6b7871; --line:#e3ded2; --white:#fff;
+    --radius:18px; --radius-sm:12px;
+    --shadow:0 1px 2px rgba(15,38,30,.06),0 8px 24px rgba(15,38,30,.06);
+    --serif:"Noto Serif KR",serif;
+    --sans:"Pretendard Variable",Pretendard,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--sand-100);line-height:1.7;word-break:keep-all;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  img,svg{display:block}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--bark)}
+  .eyebrow::before{content:"";width:22px;height:1px;background:currentColor}
+  h1,h2,h3{margin:0;line-height:1.3;letter-spacing:-.02em}
+  h2{font-family:var(--serif);font-weight:700;font-size:clamp(28px,3.4vw,40px)}
+  .lead{font-size:clamp(16px,1.4vw,18px);color:var(--ink-2)}
+  :focus-visible{outline:3px solid var(--sand-300);outline-offset:3px;border-radius:6px}
+  .skip{position:absolute;left:-999px;top:8px;background:var(--white);padding:8px 14px;border-radius:8px;z-index:99}
+  .skip:focus{left:12px}
+
+  /* header */
+  header{position:fixed;inset:0 0 auto;z-index:50;transition:background .3s,box-shadow .3s,color .3s;color:var(--sand-100)}
+  header.solid{background:rgba(246,242,234,.92);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);box-shadow:0 1px 0 var(--line);color:var(--ink)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+  .brand svg{width:34px;height:34px}
+  .brand b{display:block;font-size:17px;font-weight:700;letter-spacing:-.01em}
+  .brand small{display:block;font-size:10.5px;letter-spacing:.2em;opacity:.7;line-height:1.2}
+  .menu{display:flex;align-items:center;gap:28px;font-size:15px;font-weight:500}
+  .menu a{text-decoration:none;opacity:.86;transition:opacity .2s}
+  .menu a:hover{opacity:1}
+  .menu .cta{opacity:1;padding:10px 18px;border-radius:999px;border:1px solid currentColor}
+  header.solid .menu .cta{background:var(--forest-800);color:var(--sand-100);border-color:var(--forest-800)}
+
+  /* hero */
+  .hero{position:relative;overflow:hidden;background:radial-gradient(1200px 600px at 85% 20%,#24584a 0%,transparent 60%),linear-gradient(160deg,var(--forest-800),var(--forest-900));color:var(--sand-100);padding:160px 0 120px}
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+  .hero h1{font-family:var(--serif);font-weight:700;font-size:clamp(36px,5.4vw,64px);line-height:1.22;letter-spacing:-.03em}
+  .hero h1 em{font-style:normal;color:var(--sand-300)}
+  .hero .lead{color:rgba(246,242,234,.78);margin:26px 0 38px;max-width:520px}
+  .hero .eyebrow{color:var(--sand-300);margin-bottom:22px}
+  .btns{display:flex;flex-wrap:wrap;gap:12px}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:15px 24px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;transition:transform .2s,background .2s,color .2s;cursor:pointer}
+  .btn svg{width:18px;height:18px;transition:transform .2s}
+  .btn:hover svg{transform:translateX(3px)}
+  .btn-primary{background:var(--sand-300);color:var(--forest-900)}
+  .btn-primary:hover{background:#e6d6b0}
+  .btn-ghost{border:1px solid rgba(246,242,234,.35);color:var(--sand-100)}
+  .btn-ghost:hover{background:rgba(246,242,234,.08)}
+  .rings{width:100%;max-width:480px;margin-left:auto;aspect-ratio:1}
+  .rings circle{fill:none;stroke:var(--sand-300);transform-origin:center}
+  .rings .r{animation:ring 2.4s cubic-bezier(.2,.7,.2,1) both}
+  @keyframes ring{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
+  .hero-foot{display:flex;gap:40px;margin-top:72px;padding-top:28px;border-top:1px solid rgba(246,242,234,.14);font-size:14px;color:rgba(246,242,234,.7)}
+  .hero-foot b{display:block;color:var(--sand-100);font-size:15px;font-weight:600;margin-bottom:2px}
+
+  section{padding:120px 0}
+  .head{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;margin-bottom:56px}
+  .head .eyebrow{margin-bottom:16px}
+
+  /* about */
+  .about{background:var(--sand-100)}
+  .principles{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .pr{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:34px 30px;box-shadow:var(--shadow)}
+  .pr .ic{width:52px;height:52px;border-radius:14px;background:var(--sand-100);display:grid;place-items:center;color:var(--forest-700);margin-bottom:22px}
+  .pr .ic svg{width:26px;height:26px}
+  .pr .k{font-size:13px;font-weight:600;color:var(--bark);letter-spacing:.06em;margin-bottom:6px}
+  .pr h3{font-size:21px;margin-bottom:10px}
+  .pr p{margin:0;color:var(--ink-2);font-size:15.5px}
+
+  /* services */
+  .services{background:var(--white)}
+  .svc{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+  .svc article{background:var(--white);padding:40px 38px;display:grid;grid-template-columns:auto 1fr;gap:22px;transition:background .25s}
+  .svc article:hover{background:#fbf9f4}
+  .svc .num{font-family:var(--serif);font-size:15px;color:var(--bark);padding-top:4px}
+  .svc h3{font-size:21px;margin-bottom:10px}
+  .svc p{margin:0 0 16px;color:var(--ink-2);font-size:15.5px}
+  .tags{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+  .tags li{font-size:13px;padding:5px 11px;border-radius:999px;background:var(--sand-100);color:var(--forest-700);font-weight:500}
+
+  /* process */
+  .process{background:var(--forest-900);color:var(--sand-100)}
+  .process .lead{color:rgba(246,242,234,.72)}
+  .process .eyebrow{color:var(--sand-300)}
+  .steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(6,1fr);gap:0;position:relative}
+  .steps::before{content:"";position:absolute;left:0;right:0;top:27px;height:1px;background:rgba(217,199,158,.35)}
+  .steps li{position:relative;padding-right:18px}
+  .dot{width:56px;height:56px;border-radius:50%;background:var(--forest-900);border:1px solid var(--sand-300);display:grid;place-items:center;font-family:var(--serif);color:var(--sand-300);font-size:17px;position:relative;margin-bottom:22px}
+  .steps h3{font-size:17px;margin-bottom:8px}
+  .steps p{margin:0;font-size:14px;color:rgba(246,242,234,.66);line-height:1.65}
+  .note{margin-top:48px;font-size:13px;color:rgba(246,242,234,.5)}
+
+  /* why */
+  .why{background:var(--sand-100)}
+  .why-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
+  .quote{font-family:var(--serif);font-size:clamp(24px,2.6vw,32px);line-height:1.55;letter-spacing:-.02em;margin:22px 0 0}
+  .quote mark{background:linear-gradient(transparent 62%,rgba(217,199,158,.6) 62%);color:inherit}
+  .checks{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+  .checks li{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:start;background:var(--white);border:1px solid var(--line);border-radius:var(--radius-sm);padding:22px 24px}
+  .checks svg{width:24px;height:24px;color:var(--forest-600);margin-top:2px}
+  .checks b{display:block;font-size:16.5px;margin-bottom:2px}
+  .checks span{color:var(--ink-2);font-size:15px}
+
+  /* company */
+  .company{background:var(--white)}
+  .info{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .card{border:1px solid var(--line);border-radius:var(--radius);padding:34px 32px;background:var(--white)}
+  .card h3{font-size:18px;margin-bottom:18px;display:flex;align-items:center;gap:10px}
+  .card h3 svg{width:20px;height:20px;color:var(--forest-600)}
+  dl{margin:0;display:grid;grid-template-columns:120px 1fr;row-gap:14px;font-size:15.5px}
+  dt{color:var(--muted)}
+  dd{margin:0;font-weight:500}
+  .contact-card{background:var(--forest-800);color:var(--sand-100);border-color:var(--forest-800)}
+  .contact-card h3 svg{color:var(--sand-300)}
+  .contact-card dt{color:rgba(246,242,234,.6)}
+  .contact-card a{text-decoration:none;border-bottom:1px solid rgba(217,199,158,.5)}
+
+  footer{background:var(--forest-900);color:rgba(246,242,234,.6);font-size:13.5px;padding:48px 0}
+  .foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px}
+  .foot b{color:var(--sand-100)}
+  .foot p{margin:4px 0}
+
+  /* reveal */
+  .rv{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+  .rv.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+
+  @media (max-width:980px){
+    .hero-grid,.head,.why-grid,.info{grid-template-columns:1fr}
+    .rings{max-width:300px;margin:0 auto;order:-1}
+    .principles{grid-template-columns:1fr}
+    .svc{grid-template-columns:1fr}
+    .steps{grid-template-columns:1fr 1fr;row-gap:36px}
+    .steps::before{display:none}
+    .menu a:not(.cta){display:none}
+  }
+  @media (max-width:560px){
+    .wrap{padding:0 18px}
+    section{padding:84px 0}
+    .hero{padding:124px 0 84px}
+    .hero-foot{flex-direction:column;gap:18px;margin-top:48px}
+    .svc article{padding:30px 24px;grid-template-columns:1fr;gap:8px}
+    .steps{grid-template-columns:1fr}
+    dl{grid-template-columns:96px 1fr}
+    .card{padding:28px 22px}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">본문 바로가기</a>
+
+<header id="top">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="라이프오브트리 처음으로">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#d9c79e"/><g fill="none" stroke="#16352a" stroke-width="2"><circle cx="20" cy="20" r="4.5"/><circle cx="20" cy="20" r="9.5"/><path d="M20 5.5a14.5 14.5 0 1 1-13.3 8.7"/></g></svg>
+      <span><b>라이프오브트리</b><small>LIFE OF TREE</small></span>
+    </a>
+    <nav class="menu" aria-label="주요 메뉴">
+      <a href="#about">회사 소개</a>
+      <a href="#services">사업 분야</a>
+      <a href="#process">사업 절차</a>
+      <a href="#company">회사 정보</a>
+      <a class="cta" href="#contact">상담 문의</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <span class="eyebrow">Small-scale Housing Regeneration</span>
+          <h1 id="hero-title">오래된 동네에<br><em>새 나이테</em>를 더합니다</h1>
+          <p class="lead">주식회사 라이프오브트리는 가로주택정비사업을 비롯한 소규모주택정비사업을 지원하는 정비사업 전문 법인입니다. 주민 동의부터 입주까지, 사업의 모든 단계를 주민 곁에서 함께합니다.</p>
+          <div class="btns">
+            <a class="btn btn-primary" href="#contact">사업 상담 문의
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn btn-ghost" href="#process">사업 절차 보기</a>
+          </div>
+        </div>
+        <svg class="rings" viewBox="0 0 400 400" role="img" aria-label="나무의 나이테를 형상화한 그림">
+          <g>
+            <circle class="r" cx="200" cy="200" r="30"  stroke-width="1.6" style="animation-delay:.05s"/>
+            <circle class="r" cx="203" cy="198" r="58"  stroke-width="1.4" opacity=".9" style="animation-delay:.15s"/>
+            <circle class="r" cx="198" cy="202" r="86"  stroke-width="1.3" opacity=".8" style="animation-delay:.25s"/>
+            <circle class="r" cx="204" cy="199" r="112" stroke-width="1.2" opacity=".7" style="animation-delay:.35s"/>
+            <circle class="r" cx="199" cy="203" r="138" stroke-width="1.1" opacity=".58" style="animation-delay:.45s"/>
+            <circle class="r" cx="202" cy="198" r="162" stroke-width="1" opacity=".45" style="animation-delay:.55s"/>
+            <circle class="r" cx="200" cy="201" r="186" stroke-width=".9" opacity=".32" style="animation-delay:.65s"/>
+          </g>
+          <g fill="#d9c79e" opacity=".9">
+            <rect x="166" y="178" width="20" height="44" rx="2"/>
+            <rect x="190" y="166" width="24" height="56" rx="2"/>
+            <rect x="218" y="186" width="16" height="36" rx="2"/>
+          </g>
+          <g fill="#16352a">
+            <rect x="171" y="186" width="4" height="4"/><rect x="177" y="186" width="4" height="4"/>
+            <rect x="171" y="196" width="4" height="4"/><rect x="177" y="196" width="4" height="4"/>
+            <rect x="196" y="174" width="4" height="4"/><rect x="204" y="174" width="4" height="4"/>
+            <rect x="196" y="184" width="4" height="4"/><rect x="204" y="184" width="4" height="4"/>
+            <rect x="196" y="194" width="4" height="4"/><rect x="204" y="194" width="4" height="4"/>
+            <rect x="222" y="194" width="4" height="4"/><rect x="222" y="204" width="4" height="4"/>
+          </g>
+        </svg>
+      </div>
+      <div class="hero-foot">
+        <div><b>소규모주택정비 특례법</b>「빈집 및 소규모주택 정비에 관한 특례법」 기반 사업</div>
+        <div><b>가로주택정비사업 중심</b>소규모재건축·자율주택정비 연계 검토</div>
+        <div><b>경기도 부천 기반</b>수도권 사업장 지원</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about" aria-labelledby="about-title">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <span class="eyebrow">About us</span>
+          <h2 id="about-title">나무가 자라듯,<br>동네는 천천히 단단해집니다</h2>
+        </div>
+        <p class="lead">정비사업은 수년이 걸리는 긴 여정입니다. 라이프오브트리는 빠른 약속보다 정확한 근거와 투명한 기록으로, 주민이 안심하고 결정할 수 있는 사업을 만듭니다.</p>
+      </div>
+      <div class="principles">
+        <article class="pr rv">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22V12"/><path d="M12 12c0-4 3-7 7-7 0 4-3 7-7 7Z"/><path d="M12 15c0-3.3-2.7-6-6-6 0 3.3 2.7 6 6 6Z"/><path d="M8 22h8"/></svg></div>
+          <div class="k">뿌리 · ROOT</div>
+          <h3>법과 근거에서 출발합니다</h3>
+          <p>모든 판단은 관계 법령과 조례, 인허가 기준에 근거합니다. 변경 사항은 사업장별로 확인해 미리 대응합니다.</p>
+        </article>
+        <article class="pr rv">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <div class="k">줄기 · TRUNK</div>
+          <h3>주민과 함께 결정합니다</h3>
+          <p>동의서, 총회, 설명회까지 주민이 이해하고 참여할 수 있도록 쉬운 언어로 설명하고 절차를 지킵니다.</p>
+        </article>
+        <article class="pr rv">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg></div>
+          <div class="k">나이테 · RINGS</div>
+          <h3>모든 과정을 기록합니다</h3>
+          <p>문서와 일정, 결정 사항을 체계적으로 관리해 누가 언제 무엇을 결정했는지 언제든 확인할 수 있게 합니다.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services" aria-labelledby="svc-title">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <span class="eyebrow">Services</span>
+          <h2 id="svc-title">사업 분야</h2>
+        </div>
+        <p class="lead">사업 구상 단계의 검토부터 조합 운영, 인허가 대응, 사업 완료 후 정산까지 소규모주택정비사업 전 과정을 지원합니다.</p>
+      </div>
+      <div class="svc">
+        <article class="rv">
+          <span class="num">01</span>
+          <div>
+            <h3>가로주택정비사업</h3>
+            <p>가로구역의 노후 주택을 주민 스스로 정비하는 사업입니다. 사업성 검토와 구역 요건 확인부터 조합 설립까지 함께합니다.</p>
+            <ul class="tags"><li>사업성 검토</li><li>구역 요건 확인</li><li>조합 설립</li></ul>
+          </div>
+        </article>
+        <article class="rv">
+          <span class="num">02</span>
+          <div>
+            <h3>소규모재건축 · 자율주택정비</h3>
+            <p>사업장 여건에 맞는 정비 방식을 비교하고, 주민에게 유리한 방향을 근거와 함께 제시합니다.</p>
+            <ul class="tags"><li>정비 방식 비교</li><li>주민 설명회</li></ul>
+          </div>
+        </article>
+        <article class="rv">
+          <span class="num">03</span>
+          <div>
+            <h3>조합 운영 지원</h3>
+            <p>총회와 이사회 운영, 동의서 관리, 회계와 공시 등 조합 실무가 법령에 맞게 진행되도록 지원합니다.</p>
+            <ul class="tags"><li>총회 운영</li><li>동의서 관리</li><li>정보 공개</li></ul>
+          </div>
+        </article>
+        <article class="rv">
+          <span class="num">04</span>
+          <div>
+            <h3>인허가 · 법령 대응</h3>
+            <p>건축심의와 사업시행계획인가 등 인허가 절차를 준비하고, 법령과 조례 변경이 사업에 미치는 영향을 점검합니다.</p>
+            <ul class="tags"><li>인허가 준비</li><li>법령 변경 점검</li><li>행정 협의</li></ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="process" id="process" aria-labelledby="proc-title">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <span class="eyebrow">Process</span>
+          <h2 id="proc-title">가로주택정비사업,<br>이렇게 진행됩니다</h2>
+        </div>
+        <p class="lead">사업장마다 세부 절차와 기간은 다릅니다. 각 단계에서 필요한 동의와 서류, 결정 사항을 미리 안내해 드립니다.</p>
+      </div>
+      <ol class="steps">
+        <li class="rv"><div class="dot">1</div><h3>사업 검토</h3><p>구역 요건과 사업성을 검토하고 주민 의견을 모읍니다.</p></li>
+        <li class="rv"><div class="dot">2</div><h3>조합 설립</h3><p>법정 동의를 받아 조합설립인가를 신청합니다.</p></li>
+        <li class="rv"><div class="dot">3</div><h3>건축 심의</h3><p>건축계획을 수립하고 심의를 받습니다.</p></li>
+        <li class="rv"><div class="dot">4</div><h3>사업시행계획인가</h3><p>관리처분계획을 포함한 사업시행계획의 인가를 받습니다.</p></li>
+        <li class="rv"><div class="dot">5</div><h3>이주 · 착공</h3><p>이주와 철거를 거쳐 공사를 시작합니다.</p></li>
+        <li class="rv"><div class="dot">6</div><h3>준공 · 입주</h3><p>준공 후 입주하고, 이전고시와 청산으로 사업을 마무리합니다.</p></li>
+      </ol>
+      <p class="note">※ 위 절차는 일반적인 흐름이며, 실제 절차는 관계 법령과 지자체 기준, 사업장 여건에 따라 달라질 수 있습니다.</p>
+    </div>
+  </section>
+
+  <section class="why" aria-labelledby="why-title">
+    <div class="wrap why-grid">
+      <div class="rv">
+        <span class="eyebrow">Why Life of Tree</span>
+        <h2 id="why-title" class="quote">재개발은 건물을 바꾸는 일이지만,<br><mark>결정은 사람이 합니다.</mark></h2>
+      </div>
+      <ul class="checks">
+        <li class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg><div><b>근거 있는 설명</b><span>숫자와 조건을 법령과 공식 기준에 맞춰 설명합니다.</span></div></li>
+        <li class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg><div><b>투명한 진행</b><span>결정 과정과 문서를 기록으로 남기고 조합원과 공유합니다.</span></div></li>
+        <li class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg><div><b>개인정보 보호</b><span>조합원 정보는 필요한 범위에서만 다루고 안전하게 관리합니다.</span></div></li>
+        <li class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg><div><b>끝까지 함께</b><span>입주 후 이전고시와 청산까지 사업의 마지막 단계를 책임집니다.</span></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="company" id="company" aria-labelledby="co-title">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <span class="eyebrow">Company</span>
+          <h2 id="co-title">회사 정보</h2>
+        </div>
+        <p class="lead">사업 상담과 협력 문의는 아래 연락처로 보내 주세요. 영업일 기준으로 빠르게 답변드립니다.</p>
+      </div>
+      <div class="info">
+        <div class="card rv">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01M12 10h.01M12 14h.01M16 10h.01M16 14h.01M8 10h.01M8 14h.01"/></svg>법인 정보</h3>
+          <dl>
+            <dt>상호</dt><dd>주식회사 라이프오브트리</dd>
+            <dt>영문 상호</dt><dd>Life of Tree Co., Ltd.</dd>
+            <dt>대표자</dt><dd>맹정금</dd>
+            <dt>사업자등록번호</dt><dd>559-81-01330</dd>
+            <dt>소재지</dt><dd>경기도 부천시 소사구 경인옛로22번길 31, 201호</dd>
+          </dl>
+        </div>
+        <div class="card contact-card rv" id="contact">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"/><path d="m22 6-10 7L2 6"/></svg>상담 문의</h3>
+          <dl>
+            <dt>이메일</dt><dd><a href="mailto:jg3676417@gmail.com">jg3676417@gmail.com</a></dd>
+            <dt>상담 시간</dt><dd>평일 09:00 – 18:00</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <b>주식회사 라이프오브트리</b>
+      <p>대표자 맹정금 · 사업자등록번호 559-81-01330</p>
+      <p>경기도 부천시 소사구 경인옛로22번길 31, 201호</p>
+    </div>
+    <div>
+      <p>© 2026 Life of Tree Co., Ltd. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var h=document.querySelector('header');
+    function onScroll(){h.classList.toggle('solid',window.scrollY>40)}
+    onScroll();window.addEventListener('scroll',onScroll,{passive:true});
+    var els=document.querySelectorAll('.rv');
+    if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(e,i){e.style.transitionDelay=(i%4*80)+'ms';io.observe(e)});
+  })();
+</script>
+</body>
+</html>
